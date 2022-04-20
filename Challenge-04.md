@@ -1,6 +1,6 @@
 # Challenge 4 – トレーニング・デプロイパイプラインの作成
 
-[< Previous Challenge](./Challenge-03.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-05.md)
+[< Previous Challenge](./Challenge-03.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-05.md)
 
 ## Introduction
 

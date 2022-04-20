@@ -1,6 +1,6 @@
 # Challenge 0: 前提条件
 
-**[Home](../README.md)** - [Next Challenge >](./Challenge-01.md)
+**[Home](./README.md)** - [Next Challenge >](./Challenge-01.md)
 
 ## Introduction
 

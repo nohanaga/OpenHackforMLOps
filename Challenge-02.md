@@ -1,6 +1,6 @@
 # Challenge 2 – クラウドでモデルを作成する
 
-[< Previous Challenge](./Challenge-01.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-03.md)
+[< Previous Challenge](./Challenge-01.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-03.md)
 
 ## Introduction
 

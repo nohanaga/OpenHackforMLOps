@@ -1,6 +1,6 @@
 # Challenge 3 – クラウドにモデルをデプロイする
 
-[< Previous Challenge](./Challenge-02.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-04.md)
+[< Previous Challenge](./Challenge-02.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-04.md)
 
 ## Introduction
 
