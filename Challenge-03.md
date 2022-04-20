@@ -15,7 +15,7 @@ Web サービスとしてモデルをデプロイする場合、エンドポイ�
 
 図と[解説](https://docs.microsoft.com/ja-jp/azure/machine-learning/concept-azure-machine-learning-architecture#web-service-endpoint)を見ながらそれぞれのサービスとプロセスについて理解してから、以下のタスクを完了させます。
 
-### Work
+## Hack
 1. 新しいノートブックを作成します。
 1. [Challenge 2](./Challenge-02.md) で作成したモデルを Azure Machine Learning ワークスペースに登録します。
 1. Azure クラウドで推論を実行するための**スコアリング スクリプト**を作成します。今回は事前に提供された `./scripts/score.py` の中身を参照し、[Challenge 1](./Challenge-01.md) で Notebook セルに記載されているコードと見比べながら差異を明らかにします。

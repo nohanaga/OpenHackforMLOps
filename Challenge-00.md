@@ -8,6 +8,8 @@ DevOps と同様、MLOps は非常に幅広いトピックであり、使用す�
 
 **チームメンバーは Hack セクションに記載されたタスクを行い、成功基準を満たす必要があります。タスクが完了した時点でコーチに成功基準を満たしていることを説明し、合格すれば次のチャレンジに進むことができます。**
 
+**課題を解くためのヒントは学習リソース セクションの中に必ずあります。Hack がスタックしてしまったら学習リソースに立ち返ってください。**
+
 ## Description
 
 本チャレンジでは、[Azure Machine Learning スタジオ](https://docs.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-machine-learning-studio)と呼ばれるクラウドプラットフォーム上で開発を行います。
@@ -15,6 +17,7 @@ DevOps と同様、MLOps は非常に幅広いトピックであり、使用す�
 ![Azure Machine Learning Workspace](./images/001.png)
 Azure Machine Learning ワークスペースと各アセットとリソースについて図と[解説](https://docs.microsoft.com/ja-jp/azure/machine-learning/concept-azure-machine-learning-architecture)を見ながら関係を理解します。
 
+## 前提条件
 - Azure のサブスクリプションを取得していること。お持ちでない場合は、[無料トライアル](https://azure.microsoft.com/free/)にお申し込みください。以下の Azure リソースを作成できることを確認します。
   - Application Insights
   - Azure Container Registry
@@ -23,7 +26,7 @@ Azure Machine Learning ワークスペースと各アセットとリソースに
   - KeyVault
   - Storage Account
 
-## Work
+## Hack
 以下の Azure Machine Learning アセットとリソースを作成します。Azure Machine Learning スタジオ UI から作成しても、Azure Machine Learning SDK から作成してもかまいません。
 1. [Azure Machine Learning ワークスペース](https://ml.azure.com/)の作成。これは機械学習モデルの実験、学習、デプロイに使用する、クラウド上の基礎的なリソースです。
 1. コンピューティング インスタンスの作成
@@ -51,8 +54,8 @@ Azure Machine Learning ワークスペースと各アセットとリソースに
 
 ## 成功基準
 
-- Azure ML ワークスペースが Azure サブスクリプションに作成されている。
-- Azure ML ワークスペースにコンピューティング インスタンスおよびコンピューティング クラスターが作成されている。
+- Azure Machine Learning ワークスペースが Azure サブスクリプションに作成されている。
+- Azure Machine Learning ワークスペースにコンピューティング インスタンスおよびコンピューティング クラスターが作成されている。
 - Python がインストールされており、Python コードを実行するための IDE がある。（オプション）
 
 ## 学習リソース

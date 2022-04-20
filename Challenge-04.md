@@ -18,7 +18,7 @@ Azure ML のパイプラインの複数のステップを組み合わせて構�
 
 Azure ML SDK を介して使用できる組み込みステップは多数あります。[azureml.pipeline.steps パッケージ](https://docs.microsoft.com/ja-JP/python/api/azureml-pipeline-steps/azureml.pipeline.steps?view=azure-ml-py)のリファレンス ドキュメントを参照してください。本チャレンジで用いるのは最も柔軟性の高いクラスである、Python スクリプトを実行する PythonScriptStep です。
 
-## Work
+## Hack
 
 1. 新しいノートブックを作成します。
 1. パイプラインの手順で必要なデータへのアクセスに使用されるデータストアを設定します。
