@@ -14,16 +14,17 @@
 
 ## Description
 
-Azure ML のパイプラインの複数のステップを組み合わせて構成して、共有可能で再利用可能な Azure Machine Learning ワークフローであるパイプラインを構築できます。 パイプラインの各ステップは、ステップの内容 (スクリプトと依存関係) に加えて入力とパラメーターが変更されていない場合に、以前の実行結果を再利用できるように構成することができます。
+Azure Machine Learning のパイプラインの複数のステップを組み合わせて構成して、共有可能で再利用可能な Azure Machine Learning ワークフローであるパイプラインを構築できます。 パイプラインの各ステップは、ステップの内容 (スクリプトと依存関係) に加えて入力とパラメーターが変更されていない場合に、以前の実行結果を再利用できるように構成することができます。
 
-Azure ML SDK を介して使用できる組み込みステップは多数あります。[azureml.pipeline.steps パッケージ](https://docs.microsoft.com/ja-JP/python/api/azureml-pipeline-steps/azureml.pipeline.steps?view=azure-ml-py)のリファレンス ドキュメントを参照してください。本チャレンジで用いるのは最も柔軟性の高いクラスである、Python スクリプトを実行する PythonScriptStep です。
+Azure Machine Learning SDK を介して使用できる組み込みステップは多数あります。[azureml.pipeline.steps パッケージ](https://docs.microsoft.com/ja-JP/python/api/azureml-pipeline-steps/azureml.pipeline.steps?view=azure-ml-py)のリファレンス ドキュメントを参照してください。本チャレンジで用いるのは、最も柔軟性の高いクラスである Python スクリプトを実行する `PythonScriptStep` です。これは Python コードを自由にパイプライン化できるため
+上図のような機械学習フェーズを自分の好みの粒度でステップ化できます。今回はここから 3 つのフェーズをステップとして切り出してパイプライン化を試みます。
 
 ## Hack
 
 1. 新しいノートブックを作成します。
 1. パイプラインの手順で必要なデータへのアクセスに使用されるデータストアを設定します。
-1. パイプラインの手順間で一時データを渡すために OutputFileDatasetConfig オブジェクトを構成します。
-1. トレーニングの実行環境を RunConfiguration オブジェクトを作成して構成する
+1. パイプラインの手順間で一時データを渡すために `OutputFileDatasetConfig` オブジェクトを構成します。
+1. トレーニングの実行環境を `RunConfiguration` オブジェクトを作成して構成する
 1. `train.py` を使用してトレーニングを実行する 1 つ目のパイプライン ステップを作成する
 1. `register.py` を作成してモデルを登録する 2 つ目のパイプライン ステップを作成する
 1. `deploy.py` を作成してモデルを `Azure Container Instances(ACI)` にデプロイする 3 つ目のパイプライン ステップを作成する
