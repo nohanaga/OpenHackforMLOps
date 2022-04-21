@@ -17,9 +17,10 @@
 すでに他のオーケストレーションツールやバッチアプリケーションをお持ちの場合は、そちらを使ってトリガーしてもかまいません。
 
 1. 新しいノートブックを作成します。
-1. [Challenge 4](./Challenge-04.md) で作成したパイプラインID を使用して 5 分間隔で起動する(実際は月次などデータの適切なインジェスト単位にセットします）時刻ベースのスケジュールを作成します
+1. [Challenge 4](./Challenge-04.md) で作成したパイプラインID を使用して 5 分間隔で起動する時刻ベースのスケジュールを作成して複数回実行されることを確認します。（実際は月次などデータの適切なインジェスト単位にセットします）
+1. 作成した時刻ベースのパイプラインのスケジュールを無効化します
 1. [Challenge 4](./Challenge-04.md) で作成したパイプラインID を使用して特定のフォルダの変更を監視する変更ベースのスケジュールを作成します
-1. パイプラインのスケジュールを無効化します
+1. 作成した変更ベースのパイプラインのスケジュールを無効化します
 
 ## 成功基準
 - 時刻ベースのスケジュールが 5 分単位で起動されていること。
@@ -29,3 +30,5 @@
 
 ## 学習リソース
  - [機械学習パイプラインをトリガーする](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-trigger-published-pipeline)
+ - [Azure Pipelinesを使用してデータの準備、機械学習モデルのトレーニング、デプロイ、監視を行う](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2Fmachine-learning%2Fcontext%2Fml-context&view=azure-devops&tabs=classic)
+ - [Azure Machine Learning で GitHub Actions を使用する](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-github-actions-machine-learning?view=azure-devops)
