@@ -7,10 +7,10 @@
 ## Contents
 
  - Challenge-00 [前提条件](./Challenge-00.md)
- - Challenge-01 [ローカルでモデルを作成する](./Challenge-00.md)
- - Challenge-02 [クラウドでモデルを作成する](./Challenge-00.md)
- - Challenge-03 [クラウドにモデルをデプロイする](./Challenge-00.md)
- - Challenge-04 [トレーニング・デプロイパイプラインの作成](./Challenge-00.md)
+ - Challenge-01 [ローカルでモデルを作成する](./Challenge-01.md)
+ - Challenge-02 [クラウドでモデルを作成する](./Challenge-02.md)
+ - Challenge-03 [クラウドにモデルをデプロイする](./Challenge-03.md)
+ - Challenge-04 [トレーニング・デプロイパイプラインの作成](./Challenge-04.md)
  - Challenge-05 パイプラインのトリガー
  - Challenge-06 再トレーニングとモデル評価
  - Challenge-07 CLIv2+YAML によるオーケストレーション
