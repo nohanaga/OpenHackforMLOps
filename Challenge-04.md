@@ -44,4 +44,8 @@ Azure Machine Learning SDK を介して使用できる組み込みステップ�
  - [Why build pipelines?](https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/machine-learning-pipelines#why-build-pipelines)
  - [Azure Machine Learning SDK で機械学習パイプラインを作成して管理する](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-create-machine-learning-pipelines)
  - [機械学習パイプラインを発行して追跡する](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-deploy-pipelines)
- 
+
+## さらなる学習
+トレーニング・デプロイパイプラインは、Azure DevOps や Github Actions を使っても構築することができます。
+ - [Azure Pipelinesを使用してデータの準備、機械学習モデルのトレーニング、デプロイ、監視を行う](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2Fmachine-learning%2Fcontext%2Fml-context&view=azure-devops&tabs=yaml)
+ - [Azure Machine Learning で GitHub Actions を使用する](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-github-actions-machine-learning?view=azure-devops)
