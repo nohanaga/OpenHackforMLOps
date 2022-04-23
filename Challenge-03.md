@@ -3,17 +3,19 @@
 [< Previous Challenge](./Challenge-02.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-04.md)
 
 ## Introduction
+データサイエンティストチームのコラボレーションによりモデルの精度が上層部に見せられるレベルまで高まりました。それを知った上層部からすぐに、チームに対して実績値に加えてモデルの予測値を社内のエグゼクティブダッシュボードや別システムに表示したいとの要求が寄せられており、メンバーは作成した最も精度の良いモデルをホスティングして HTTP リクエストに応じて推論を行うエンドポイントを構築しなければなりません。
 
 この課題の目的は、作成した機械学習モデルを Azure Machine Learning に登録し、Web サービスとして Azure クラウドにデプロイする方法を理解することです。
 
-Web サービスとしてモデルをデプロイする場合、エンドポイントを Azure Container Instances、Azure Kubernetes Service、または FPGA にデプロイできます。モデル、スコアリング スクリプト、および関連ファイルからサービスを作成します。これらは、モデルの実行環境を含むベース コンテナー イメージに配置されます。イメージには、Web サービスに送信されるスコアリング要求を受け取る、負荷分散された HTTP [エンドポイント](https://docs.microsoft.com/ja-jp/azure/machine-learning/concept-azure-machine-learning-architecture#endpoints)があります。
-
 ## Description
+
+Web サービスとしてモデルをデプロイする場合、エンドポイントを Azure Container Instances、Azure Kubernetes Service にデプロイできます。また、オンプレミスの IoT Edge デバイスおよび Azure Stack Edge デバイスに、モデルを同様にデプロイすることもできます。モデル、スコアリング スクリプト、および関連ファイルからサービスを作成します。これらは、モデルの実行環境を含むベース コンテナー イメージに配置されます。イメージには、Web サービスに送信されるスコアリング要求を受け取る、負荷分散された HTTP [エンドポイント](https://docs.microsoft.com/azure/machine-learning/concept-azure-machine-learning-architecture#endpoints)があります。
+
 次の図は、Web サービス エンドポイントとしてデプロイされているモデルの推論ワークフローを示しています。
 
 ![モデルの推論ワークフロー](./images/003.png)
 
-図と[解説](https://docs.microsoft.com/ja-jp/azure/machine-learning/concept-azure-machine-learning-architecture#web-service-endpoint)を見ながらそれぞれのサービスとプロセスについて理解してから、以下のタスクを完了させます。
+図と[解説](https://docs.microsoft.com/azure/machine-learning/concept-azure-machine-learning-architecture#web-service-endpoint)を見ながらそれぞれのサービスとプロセスについて理解してから、以下のタスクを完了させます。
 
 ## Hack
 1. 新しいノートブックを作成します。
@@ -33,7 +35,7 @@ Web サービスとしてモデルをデプロイする場合、エンドポイ�
 
 
 ## 学習リソース
- - [機械学習モデルを Azure にデプロイする（Python）](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-deploy-and-where?tabs=python)
- - [チュートリアル: サンプルの Jupyter Notebook を使用して画像分類モデルをトレーニングおよびデプロイする](https://docs.microsoft.com/ja-jp/azure/machine-learning/tutorial-train-deploy-notebook)
+ - [機械学習モデルを Azure にデプロイする（Python）](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where?tabs=python)
+ - [チュートリアル: サンプルの Jupyter Notebook を使用して画像分類モデルをトレーニングおよびデプロイする](https://docs.microsoft.com/azure/machine-learning/tutorial-train-deploy-notebook)
  - [Azure Machine Learning のしくみ:アーキテクチャと概念](https://docs.microsoft.com/azure/machine-learning/concept-azure-machine-learning-architecture)
- 
+ - [AI と機械学習コンピューティングをオンプレミスとエッジにデプロイする](https://docs.microsoft.com/azure/architecture/hybrid/deploy-ai-ml-azure-stack-edge)
