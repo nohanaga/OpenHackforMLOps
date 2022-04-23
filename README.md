@@ -11,9 +11,9 @@
  - Challenge-02 [クラウドでモデルを作成する](./Challenge-02.md)
  - Challenge-03 [クラウドにモデルをデプロイする](./Challenge-03.md)
  - Challenge-04 [トレーニング・デプロイパイプラインの作成](./Challenge-04.md)
- - Challenge-05 [機械学習パイプラインのトリガー](./Challenge-05.md)
+ - Challenge-05 [機械学習パイプラインのトリガーとオーケストレーション](./Challenge-05.md)
  - Challenge-06 [再トレーニングとモデル評価](./Challenge-06.md)
- - Challenge-07 CLIv2+YAML によるオーケストレーション
+ - Challenge-07 [CLIv2+YAML による MLOps](./Challenge-07.md)
 
 
 ## Contributed by
