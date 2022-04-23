@@ -4,13 +4,17 @@
 
 ## Introduction
 
-DevOps と同様、MLOps は非常に幅広いトピックであり、使用するツールに関しても多くの選択肢があります。このチャレンジでは、コンピュータに適切なツールがインストールされていることを確認することに焦点を当てます。
+あなたは急ごしらえの AI 需要予測プロジェクトに招集された Adventure Works 社のデータサイエンティストです。まだ発足したばかりなので、データサイエンティストは自分一人しかいません。しかし上層部の要求によりすぐに PoC を始めなければならず、残念ながらハイスペックなマシンを調達したり、AI プロジェクトに必要なツール類を制約の多い業務 PC に導入している時間がありません。ただし幸運なことにある程度の額の Azure サブスクリプションが提供されました。
 
+## Rules
 **チームメンバーは Hack セクションに記載されたタスクを行い、成功基準を満たす必要があります。タスクが完了した時点でコーチに成功基準を満たしていることを説明し、合格すれば次のチャレンジに進むことができます。**
 
 **課題を解くためのヒントは学習リソース セクションの中に必ずあります。Hack がスタックしてしまったら学習リソースに立ち返ってください。**
 
+
 ## Description
+
+DevOps と同様、MLOps は非常に幅広いトピックであり、使用するツールに関しても多くの選択肢があります。このチャレンジでは、コンピュータに適切なツールがインストールされていることを確認することに焦点を当てます。
 
 本チャレンジでは、[Azure Machine Learning スタジオ](https://docs.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-machine-learning-studio)と呼ばれるクラウドプラットフォーム上で開発を行います。
 
@@ -42,8 +46,8 @@ Azure Machine Learning ワークスペースと各アセットとリソースに
   **Note:** 自分の OS の環境を壊さずに OpenHack 用の conda 環境を用意するのがおすすめです。インストールができない方は、Azure Machine Learning の Notebook 上で実行してください。
 
 - Python モジュールが pip 経由でダウンロード可能であることを確認する（[PyPI](https://pypi.org)から、または内部のパッケージマネージャから）。
-  - requirement.txt を参照
-  - pip install -r requiments.txt
+  - arima-env.yml を参照
+  - conda env create -f=arima-env.yml
 - Visual Studio Code または任意の Python IDE（Jupyter Notebook がよく使われます）
   - Python extensions
 
