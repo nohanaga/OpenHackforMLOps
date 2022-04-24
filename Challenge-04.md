@@ -3,7 +3,7 @@
 [< Previous Challenge](./Challenge-03.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-05.md)
 
 ## Introduction
-高い精度を達成した予測モデルとビジュアライズの PoC プロジェクトは上層部の支持を得ることができ、定常的な社内プロジェクトとして昇格しました。今後は技術の横展開や他のシステムのデータに対して同様の予測を行うことが求められています。それに伴いデータサイエンティストの作業量は増大しており、より高度な並列化・自動化が必要です。現状は各々のデータサイエンティストがノートブック上でモデル作成のためのコードを記述しており、中には車輪の再発明的な無駄な作業が生じたり、モデル作成に必要な前処理の一つが抜けてしまったり、うまく共同作業ができなかったりしています。
+目標の精度を達成した予測モデルとビジュアライズの PoC プロジェクトは上層部の支持を得ることができ、定常的な社内プロジェクトとして昇格しました。今後は技術の横展開や他のシステムのデータに対して同様の予測を行うことが求められています。それに伴いデータサイエンティストの作業量は増大しており、より高度な並列化・自動化が必要です。現状は各々のデータサイエンティストがノートブック上でモデル作成のためのコードを記述しており、中には車輪の再発明的な無駄な作業が生じたり、モデル作成に必要な前処理の一つが抜けてしまったり、うまく共同作業ができなかったりしています。
 
 この課題の目的は、**機械学習パイプライン**を使用して、機械学習ワークフローの構築、最適化、管理を行う方法について理解することです。
 
@@ -47,5 +47,6 @@ Azure Machine Learning SDK を介して使用できる組み込みステップ�
 
 ## さらなる学習
 トレーニング・デプロイパイプラインは、Azure DevOps や Github Actions を使っても構築することができます。
+
  - [Azure Pipelinesを使用してデータの準備、機械学習モデルのトレーニング、デプロイ、監視を行う](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2Fmachine-learning%2Fcontext%2Fml-context&view=azure-devops&tabs=yaml)
  - [Azure Machine Learning で GitHub Actions を使用する](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-github-actions-machine-learning?view=azure-devops)

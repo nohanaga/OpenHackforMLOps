@@ -1,10 +1,10 @@
-# Challenge 7 – CLIv2+YAML による MLOps
+# Challenge 7 – CLI v2+YAML による MLOps
 
 [< Previous Challenge](./Challenge-06.md) - **[Home](./README.md)**
 
 ## Introduction
 
-Azure CLI v2(プレビュー) は、Azure Machine Learning の拡張インターフェイスです。これにより、**コマンド ライン** からモデルをトレーニングおよびデプロイできます。また、モデルのライフサイクルを追跡しながらデータ サイエンスのスケールアップとスケールアウトを加速する機能もあります。
+Azure Machine Learning CLI v2 は、Azure Machine Learning の拡張インターフェイスです。これにより、**コマンド ライン** からモデルをトレーニングおよびデプロイできます。また、モデルのライフサイクルを追跡しながらデータ サイエンスのスケールアップとスケールアウトを加速する機能もあります。
 
 これまで、コマンドラインインターフェイス(CLI)を使用したクラウドリソースの管理に慣れ親しんでいるエンジニアは、その操作感をそのまま機械学習に持ち込むことができます。
 
