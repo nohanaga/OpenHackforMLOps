@@ -16,14 +16,14 @@ Azure Machine Learning CLI v2 は、Azure Machine Learning の拡張インター
 1. [Challenge 2](./Challenge-02.md) で作成したノートブックを開き、 CLI v2 を使用して学習実行と生成ファイルをローカル環境にダウンロードします。必要に応じて、環境とコンピュート クラスターも作成します。
 1. [Challenge 3](./Challenge-03.md) で作成したノートブックを開き、作成したモデルを CLI v2 を使用して Azure Machine Learning ワークスペースに登録します。
 1. CLI v2 を使用してオンライン エンドポイントを作成してモデルをデプロイおよびスコアリングします。
-
-
+1. [Challenge 4](./Challenge-04.md) で作成したノートブックを開き、CLI v2 を使用して
+`[train, register, deploy]` の 3 ステップのパイプラインを作成して実行します。
 
 ## 成功基準
 - 学習に使うトランザクションデータが年単位に分割された状態でデータセットに登録されている。
 - Azure Machine Learning ワークスペースにモデルが登録されていること。
 - リアルタイムエンドポイントのデプロイに成功(サービスの状態が Healthy)すること。
-- 
+- 作成したパイプラインが正常に実行されること。
 
 ## 学習リソース
 
@@ -31,3 +31,4 @@ Azure Machine Learning CLI v2 は、Azure Machine Learning の拡張インター
 - [CLI v2 リファレンス](https://docs.microsoft.com/ja-jp/cli/azure/ml?view=azure-cli-latest)
 - [CLI v2 YAML スキーマ](https://docs.microsoft.com/ja-jp/azure/machine-learning/reference-yaml-overview)
 - [オンライン エンドポイントを使用して機械学習モデルをデプロイおよびスコアリングする](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-deploy-managed-online-endpoints)
+- [Azure Machine Learning CLI でコンポーネントを使用して機械学習パイプラインを作成して実行する](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-create-component-pipelines-cli)
