@@ -13,11 +13,11 @@
 
 ![aml-pipelines-concept](./images/004.png)
 
-機械学習の各フェーズをパイプライン化することのメリットを[解説](https://docs.microsoft.com/ja-jp/azure/machine-learning/concept-ml-pipelines#key-advantages)を参照しながら理解します。
+機械学習の各フェーズをパイプライン化することのメリットを[解説](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#key-advantages)を参照しながら理解します。
 
 Azure Machine Learning のパイプラインの複数のステップを組み合わせて構成して、共有可能で再利用可能な Azure Machine Learning ワークフローであるパイプラインを構築できます。 パイプラインの各ステップは、ステップの内容 (スクリプトと依存関係) に加えて入力とパラメーターが変更されていない場合に、以前の実行結果を再利用できるように構成することができます。
 
-Azure Machine Learning SDK を介して使用できる組み込みステップは多数あります。[azureml.pipeline.steps パッケージ](https://docs.microsoft.com/ja-JP/python/api/azureml-pipeline-steps/azureml.pipeline.steps?view=azure-ml-py)のリファレンス ドキュメントを参照してください。本チャレンジで用いるのは、最も柔軟性の高いクラスである Python スクリプトを実行する `PythonScriptStep` です。これは Python コードを自由に記述できるため、上図のような機械学習フェーズを自分の好みの粒度でステップ化できます。今回はここから 3 つのフェーズをステップとして切り出してパイプライン化を試みます。
+Azure Machine Learning SDK を介して使用できる組み込みステップは多数あります。[azureml.pipeline.steps パッケージ](https://docs.microsoft.com/python/api/azureml-pipeline-steps/azureml.pipeline.steps?view=azure-ml-py)のリファレンス ドキュメントを参照してください。本チャレンジで用いるのは、最も柔軟性の高いクラスである Python スクリプトを実行する `PythonScriptStep` です。これは Python コードを自由に記述できるため、上図のような機械学習フェーズを自分の好みの粒度でステップ化できます。今回はここから 3 つのフェーズをステップとして切り出してパイプライン化を試みます。
 
 ## Hack
 
@@ -40,15 +40,15 @@ Azure Machine Learning SDK を介して使用できる組み込みステップ�
 
 
 ## 学習リソース
- - [Azure Machine Learning パイプラインとは](https://docs.microsoft.com/ja-jp/azure/machine-learning/concept-ml-pipelines)
+ - [Azure Machine Learning パイプラインとは](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines)
  - [Why build pipelines?](https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/machine-learning-pipelines#why-build-pipelines)
- - [Azure Machine Learning SDK で機械学習パイプラインを作成して管理する](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-create-machine-learning-pipelines)
- - [機械学習パイプラインを発行して追跡する](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-deploy-pipelines)
+ - [Azure Machine Learning SDK で機械学習パイプラインを作成して管理する](https://docs.microsoft.com/azure/machine-learning/how-to-create-machine-learning-pipelines)
+ - [機械学習パイプラインを発行して追跡する](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-pipelines)
 
 ## さらなる学習
  - トレーニング・デプロイパイプラインは、Azure DevOps や Github Actions を使っても構築することができます。Azure DevOps/Github Actions を使って本チャレンジのパイプラインを構築してください。
 
-    - [Azure Pipelinesを使用してデータの準備、機械学習モデルのトレーニング、デプロイ、監視を行う](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2Fmachine-learning%2Fcontext%2Fml-context&view=azure-devops&tabs=yaml)
-    - [Azure Machine Learning で GitHub Actions を使用する](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-github-actions-machine-learning?view=azure-devops)
+    - [Azure Pipelinesを使用してデータの準備、機械学習モデルのトレーニング、デプロイ、監視を行う](https://docs.microsoft.com/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2Fmachine-learning%2Fcontext%2Fml-context&view=azure-devops&tabs=yaml)
+    - [Azure Machine Learning で GitHub Actions を使用する](https://docs.microsoft.com/azure/machine-learning/how-to-github-actions-machine-learning?view=azure-devops)
 
  - データ加工フェーズをパイプライン化することも重要です。`00_LoadData.ipynb` の各セルを分離し、データ変換ステップを追加してパイプラインを構築してください。

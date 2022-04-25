@@ -3,14 +3,14 @@
 [< Previous Challenge](./Challenge-01.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-03.md)
 
 ## Introduction
-これまでは、データサイエンティストが実験的に自分のローカル環境でモデルを作成していました。しかし徐々にモデル作成の試行回数、使用しているノートブックの量が増大し複雑性が増してきています。さらに学習に用いるデータの量も増えてきたため、計算需要に柔軟に対応できてコストパフォーマンスに優れた計算資源が必要になってきました。
+これまでは、データサイエンティストが実験的に自分のローカル環境でモデルを作成していました。しかし徐々にモデル作成の試行回数、使用しているノートブックの量が増大し複雑性が増したため、トレーニングコードと対応するモデルの管理が必要とされています。さらに学習に用いるデータの量も増えてきたため、計算需要に柔軟に対応できてコストパフォーマンスに優れた計算資源が必要になってきました。
 
 そして幸運なことにチームに新たなデータサイエンティストが加わりました。作成したモデルやノートブックをチームで共有し始めましたが、あるメンバーでは Python 環境の問題でうまく動作しなかったり、メンバーによって推論結果が異なるなどの問題も出始めています。
 
 この課題の目的は、ローカルで開発していたトレーニングをクラウドにスケールする際の方法論を理解することです。
 
 ## Description
-クラウド上でモデルをトレーニングするための一般的な方法は、[環境](https://docs.microsoft.com/azure/machine-learning/concept-environments)、[コンピューティング ターゲット](https://docs.microsoft.com/azure/machine-learning/concept-compute-target)、[トレーニング Python スクリプト](https://docs.microsoft.com/ja-jp/azure/machine-learning/tutorial-1st-experiment-sdk-train#create-training-scripts)をそれぞれ作成し、実行構成としてパッケージ化します。その後、実行構成をクラウドに送信してトレーニングジョブを起動します。[Challenge 1](./Challenge-01.md) では 1 つの Notebook 上ですべてが完結しましたが、今回はなぜこうする必要があるのでしょうか。得られるメリットについてチームで議論します。
+クラウド上でモデルをトレーニングするための一般的な方法は、[環境](https://docs.microsoft.com/azure/machine-learning/concept-environments)、[コンピューティング ターゲット](https://docs.microsoft.com/azure/machine-learning/concept-compute-target)、[トレーニング Python スクリプト](https://docs.microsoft.com/azure/machine-learning/tutorial-1st-experiment-sdk-train#create-training-scripts)をそれぞれ作成し、実行構成としてパッケージ化します。その後、実行構成をクラウドに送信してトレーニングジョブを起動します。[Challenge 1](./Challenge-01.md) では 1 つの Notebook 上ですべてが完結しましたが、今回はなぜこうする必要があるのでしょうか。得られるメリットについてチームで議論します。
 
 機械学習モデルの作成は、ローカル コンピューター上で開始し、後でクラウドベースのクラスターにスケールアウトするのが一般的です。Azure Machine Learning では、トレーニング スクリプトを変更しなくても、さまざまなコンピューティング先でトレーニング スクリプトを実行できます。
 

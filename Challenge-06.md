@@ -45,7 +45,7 @@ Azure Machine Learning には、トレーニングに用いるデータの変化
 
 データ ドリフトに関するアラートを設定して、市場の変化によってデータセットのプロファイルが大きく変わった場合にアラートを送信するように設定してください。
 
-- [データセットでデータ ドリフトを検出する](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-monitor-datasets)
+- [データセットでデータ ドリフトを検出する](https://docs.microsoft.com/azure/machine-learning/how-to-monitor-datasets)
 ## おめでとうございます
 
 この Hack のチャレンジは終了しました。コンテンツは継続的に更新しています。今後のフェーズでは、AKS Data Drift に加え、ONNX や mlflow など他の ML プラットフォームも取り込んで、このソリューションを拡張していく予定です。ご期待ください。

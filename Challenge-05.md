@@ -28,6 +28,6 @@
 
 
 ## 学習リソース
- - [機械学習パイプラインをトリガーする](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-trigger-published-pipeline)
- - [Azure Pipelinesを使用してデータの準備、機械学習モデルのトレーニング、デプロイ、監視を行う](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2Fmachine-learning%2Fcontext%2Fml-context&view=azure-devops&tabs=classic)
- - [Azure Machine Learning で GitHub Actions を使用する](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-github-actions-machine-learning?view=azure-devops)
+ - [機械学習パイプラインをトリガーする](https://docs.microsoft.com/azure/machine-learning/how-to-trigger-published-pipeline)
+ - [Azure Pipelinesを使用してデータの準備、機械学習モデルのトレーニング、デプロイ、監視を行う](https://docs.microsoft.com/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2Fmachine-learning%2Fcontext%2Fml-context&view=azure-devops&tabs=classic)
+ - [Azure Machine Learning で GitHub Actions を使用する](https://docs.microsoft.com/azure/machine-learning/how-to-github-actions-machine-learning?view=azure-devops)

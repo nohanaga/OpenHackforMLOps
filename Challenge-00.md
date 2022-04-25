@@ -16,10 +16,10 @@
 
 DevOps と同様、MLOps は非常に幅広いトピックであり、使用するツールに関しても多くの選択肢があります。このチャレンジでは、コンピュータに適切なツールがインストールされていることを確認することに焦点を当てます。
 
-本チャレンジでは、[Azure Machine Learning スタジオ](https://docs.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-machine-learning-studio)と呼ばれるクラウドプラットフォーム上で開発を行います。
+本チャレンジでは、[Azure Machine Learning スタジオ](https://docs.microsoft.com/azure/machine-learning/overview-what-is-machine-learning-studio)と呼ばれるクラウドプラットフォーム上で開発を行います。
 
 ![Azure Machine Learning Workspace](./images/001.png)
-Azure Machine Learning ワークスペースと各アセットとリソースについて図と[解説](https://docs.microsoft.com/ja-jp/azure/machine-learning/concept-azure-machine-learning-architecture)を見ながら関係を理解します。
+Azure Machine Learning ワークスペースと各アセットとリソースについて図と[解説](https://docs.microsoft.com/azure/machine-learning/concept-azure-machine-learning-architecture)を見ながら関係を理解します。
 
 ## 前提条件
 - Azure のサブスクリプションを取得していること。お持ちでない場合は、[無料トライアル](https://azure.microsoft.com/free/)にお申し込みください。以下の Azure リソースを作成できることを確認します。
@@ -64,7 +64,7 @@ Azure Machine Learning ワークスペースと各アセットとリソースに
 
 ## 学習リソース
 - [Azure Machine Learning のしくみ:アーキテクチャと概念](https://docs.microsoft.com/azure/machine-learning/concept-azure-machine-learning-architecture)
-- [Azure Machine Learning ワークスペースとは](https://docs.microsoft.com/ja-jp/azure/machine-learning/concept-workspace)
+- [Azure Machine Learning ワークスペースとは](https://docs.microsoft.com/azure/machine-learning/concept-workspace)
 - [Azure Machine Learning の利用を開始するために必要なワークスペース リソースを作成する](https://docs.microsoft.com/azure/machine-learning/quickstart-create-resources)
-- [Azure Machine Learning コンピューティング インスタンスとは](https://docs.microsoft.com/ja-jp/azure/machine-learning/concept-compute-instance)
-- [Azure Machine Learning コンピューティング クラスターとは](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-create-attach-compute-cluster)
+- [Azure Machine Learning コンピューティング インスタンスとは](https://docs.microsoft.com/azure/machine-learning/concept-compute-instance)
+- [Azure Machine Learning コンピューティング クラスターとは](https://docs.microsoft.com/azure/machine-learning/how-to-create-attach-compute-cluster)
