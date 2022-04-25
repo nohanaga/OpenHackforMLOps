@@ -1,4 +1,4 @@
-# Challenge 7 – CLI v2+YAML による MLOps
+# Challenge 7 – CLI v2+YAML による MLOps（ストレッチ課題）
 
 [< Previous Challenge](./Challenge-06.md) - **[Home](./README.md)**
 
