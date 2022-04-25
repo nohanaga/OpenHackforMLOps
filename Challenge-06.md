@@ -38,7 +38,7 @@
 - 再トレーニングしたモデル用の “healthy” ステータスの ACI デプロイが、リアルタイムエンドポイントに作成されていること。
 
 ## 学習リソース
-
+ - [Azure Machine Learning SDK で機械学習パイプラインを作成して管理する](https://docs.microsoft.com/azure/machine-learning/how-to-create-machine-learning-pipelines)
 - [MLOps: Azure Machine Learning を使用したモデルの管理、デプロイ、系列追跡、監視](<https://docs.microsoft.com/azure/machine-learning/concept-model-management-and-deployment>)
 - [MLOps リファレンス・アーキテクチャ](<https://docs.microsoft.com/azure/architecture/reference-architectures/ai/mlops-python>)
 
