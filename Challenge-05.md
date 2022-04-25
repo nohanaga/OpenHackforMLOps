@@ -10,24 +10,39 @@
 ## Description
 機械学習パイプラインは時刻またはファイルシステムの変更に基づいてスケジュールを作成することができます。時刻ベースのスケジュールを使用すると、データの誤差の監視などの日常的なタスクを行うことができます。 変更ベースのスケジュールを使用すると、新しいデータがアップロードされたり古いデータが編集されたりといった、不規則な変更や予期しない変更に対処できます。
 
-また、Azure DevOps や Github Actions を使うことで機械学習パイプラインをより大きな MLOps オーケストレーション パイプラインの一部として呼び出すことができます。
+また、機械学習パイプラインを Azure Data Factory などのデータインジェストパイプラインや Azure DevOps、Github Actions などのより大きな MLOps オーケストレーション パイプラインの一部として呼び出すことができます。
+
+## ツールの選択
+MLOps オーケストレーションを実現するための[複数のテクノロジーの違い](https://docs.microsoft.com/azure/architecture/example-scenario/mlops/aml-decision-tree#overall-orchestration-and-scheduling)を理解し、チームで取り組むテクノロジーを選択してください。下記のいずれかを満たす必要があります。
+
+1. モデルのトレーニングにフォーカスした自動化の場合、ML Pipelines のトリガー機能を使用します。
+1. Azure Logic App を使用してより複雑なトリガーを実装します。
+1. Azure DevOps の Azure Pipelines を使ってパイプラインを実装しコードコミット駆動やリリース ゲートと承認機能を使用します。
+1. Github Actions の Workflow を使ってパイプラインを実装しコードコミット駆動を使用します。
 
 ## Hack
-すでに他のオーケストレーションツールやバッチアプリケーションをお持ちの場合は、そちらを使ってトリガーしてもかまいません。
-
+### 1. ML Pipelines
 1. 新しいノートブックを作成します。
 1. [Challenge 4](./Challenge-04.md) で作成したパイプラインID を使用して 5 分間隔で起動する時刻ベースのスケジュールを作成して複数回実行されることを確認します。（実際は月次など適切な更新間隔にセットします）
 1. 作成した時刻ベースのパイプラインのスケジュールを無効化します
 1. [Challenge 4](./Challenge-04.md) で作成したパイプラインID を使用して特定のフォルダの変更を監視する変更ベースのスケジュールを作成します
 1. 作成した変更ベースのパイプラインのスケジュールを無効化します
 
-## 成功基準
-- 時刻ベースのスケジュールが 5 分単位で起動されていること。
-- 変更ベースのスケジュールが正常に起動されていること。
-- パイプラインのスケジュール無効化されていること。
+### 2. Azure Logic App
+[複雑なトリガーに Azure Logic Apps を使用する](https://docs.microsoft.com/ja-jp/azure/machine-learning/how-to-trigger-published-pipeline#create-a-logic-app) を参照して実装します。
 
+### 3. Azure DevOps
+[Azure Pipelinesを使用してデータの準備、機械学習モデルのトレーニング、デプロイ、監視を行う](https://docs.microsoft.com/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2Fmachine-learning%2Fcontext%2Fml-context&view=azure-devops&tabs=classic) を参照して実装します。
+
+### 4. Github Actions
+[Azure Machine Learning で GitHub Actions を使用する](https://docs.microsoft.com/azure/machine-learning/how-to-github-actions-machine-learning?view=azure-devops) を参照して実装します。
+
+
+## 成功基準
+- 選択したテクノロジーを使用して任意のトリガーによってパイプラインを起動できること。
 
 ## 学習リソース
+ - [最適なツール選択のための Azure Machine Learning 意思決定ガイド](https://docs.microsoft.com/ja-jp/azure/architecture/example-scenario/mlops/aml-decision-tree)
  - [機械学習パイプラインをトリガーする](https://docs.microsoft.com/azure/machine-learning/how-to-trigger-published-pipeline)
- - [Azure Pipelinesを使用してデータの準備、機械学習モデルのトレーニング、デプロイ、監視を行う](https://docs.microsoft.com/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2Fmachine-learning%2Fcontext%2Fml-context&view=azure-devops&tabs=classic)
- - [Azure Machine Learning で GitHub Actions を使用する](https://docs.microsoft.com/azure/machine-learning/how-to-github-actions-machine-learning?view=azure-devops)
+ 
+ 
