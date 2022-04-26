@@ -15,13 +15,13 @@
 ## ツールの選択
 MLOps オーケストレーションを実現するための[複数のテクノロジーの違い](https://docs.microsoft.com/azure/architecture/example-scenario/mlops/aml-decision-tree#overall-orchestration-and-scheduling)を理解し、チームで取り組むテクノロジーを選択してください。下記のいずれかを満たす必要があります。
 
-1. モデルのトレーニングにフォーカスした自動化の場合、ML Pipelines のトリガー機能を使用します。
+1. モデルのトレーニングにフォーカスした自動化の場合、機械学習パイプラインのトリガー機能を使用します。
 1. Azure Logic App を使用してより複雑なトリガーを実装します。
 1. Azure DevOps の Azure Pipelines を使ってパイプラインを実装しコードコミット駆動を使用します。
 1. Github Actions の Workflow を使ってパイプラインを実装しコードコミット駆動を使用します。
 
 ## Hack
-### 1. ML Pipelines
+### 1. 機械学習パイプライン
 1. 新しいノートブックを作成します。
 1. [Challenge 4](./Challenge-04.md) で作成したパイプラインID を使用して 5 分間隔で起動する時刻ベースのスケジュールを作成して複数回実行されることを確認します。（実際は月次など適切な更新間隔にセットします）
 1. 作成した時刻ベースのパイプラインのスケジュールを無効化します。
