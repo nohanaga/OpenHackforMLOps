@@ -38,7 +38,7 @@ MLOps は、データサイエンティストやアプリ開発者が ML/AI モ�
  - Challenge-07 [CLIv2+YAML による MLOps](./Challenge-07.md)
 
 ## Additional Contents
-この OpenHack は、ETL/ELT などのデータインジェストプロセスによってデータウェアハウスに蓄積されたデータを活用するシナリオです。もし、データインジェストプロセスやデータウェアハウスソリューションの構築を体験されたい場合は「OpenHack for Modern Data Warehousing」の受講をおすすめします。
+この OpenHack は、ETL/ELT などのデータインジェストプロセスによってデータウェアハウスに蓄積されたデータを活用するシナリオです。もし、データインジェストプロセスやデータウェアハウスソリューションの構築を体験されたい場合は「OpenHack for Modern Data Warehousing」の受講をおすすめします。Modern Data Warehousing と MLOps を経験することで、データ分析に関する End-to-End の技術を習得できます。
 
 ## Contributed by
  - [microsoft/WhatTheHack 032-MLOpsFromScratch](https://github.com/microsoft/WhatTheHack/tree/master/032-MLOpsFromScratch)
