@@ -32,6 +32,7 @@
 - スクリプトの実行構成に環境、コンピューティング ターゲット、トレーニング Python スクリプトをセットし、実験を送信すること。
 - リモート環境で ARIMA モデルを作成し、モデルを Pickle 形式でローカル環境に保存すること。
 
+<br>
 
 ## ヒント
 - トレーニング スクリプトにはコマンドライン引数を渡すことができます。指定方法は[こちら](https://azure.github.io/azureml-cheatsheets/ja/docs/cheatsheets/python/v1/script-run-config/)を参照。
