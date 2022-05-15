@@ -38,13 +38,19 @@ Azure Machine Learning SDK を介して使用できる組み込みステップ�
 - パイプラインエンドポイントにパイプラインがアクティブ状態で登録されていること。
 - 発行されたパイプラインが正常に実行されること。
 
-<br>
 
-## ヒント
+<details>
+<summary>ヒント</summary>
+
 - パイプライン ステップは 1 つずつ作成し、正常実行を確認しながらつなげていくことをおすすめします。
 - パイプライン ステップの実行順序は、`OutputFileDatasetConfig` オブジェクトを入力として用いるか出力として用いるかの違いによって[暗黙的に決定](https://docs.microsoft.com/azure/machine-learning/how-to-move-data-in-out-of-pipelines#use-outputfiledatasetconfig-for-intermediate-data)されます。
 - パイプライン ステップの実行順序を明示的に指定する場合は [run_after](https://docs.microsoft.com/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinestep?view=azure-ml-py#azureml-pipeline-core-pipelinestep-run-after) メソッドを使用します。
 - 外部からパイプラインを実行する際に[パイプライン パラメータ](https://docs.microsoft.com/azure/machine-learning/how-to-create-machine-learning-pipelines#use-pipeline-parameters-for-arguments-that-change-at-inference-time)を指定すると各パイプライン ステップ内のスクリプトへ引数を渡すことができます。実行時の指定のしかたは[こちら](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-pipelines#run-a-published-pipeline)を参照。
+
+
+</details>
+<br>
+
 
 ## 学習リソース
  - [Azure Machine Learning パイプラインとは](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines)

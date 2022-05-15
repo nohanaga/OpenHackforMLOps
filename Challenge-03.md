@@ -39,4 +39,4 @@ Web サービスとしてモデルをデプロイする場合、エンドポイ�
  - [チュートリアル: サンプルの Jupyter Notebook を使用して画像分類モデルをトレーニングおよびデプロイする](https://docs.microsoft.com/azure/machine-learning/tutorial-train-deploy-notebook)
  - [Azure Machine Learning のしくみ:アーキテクチャと概念](https://docs.microsoft.com/azure/machine-learning/concept-azure-machine-learning-architecture)
  - [AI と機械学習コンピューティングをオンプレミスとエッジにデプロイする](https://docs.microsoft.com/azure/architecture/hybrid/deploy-ai-ml-azure-stack-edge)
- - [モデル デプロイを使用したトラブルシューティング](https://docs.microsoft.com/azure/machine-learning/how-to-troubleshoot-deployment-local#debug-locall)
+ - [モデル デプロイを使用したトラブルシューティング（テスト手法）](https://docs.microsoft.com/azure/machine-learning/how-to-troubleshoot-deployment-local#debug-locall)

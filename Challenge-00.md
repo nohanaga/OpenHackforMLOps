@@ -30,6 +30,8 @@ Azure Machine Learning ワークスペースと各アセットとリソースに
   - KeyVault
   - Storage Account
 
+- 提供された無償の Azure Pass がある場合は、そのまま [Azure Portal](https://portal.azure.com/) にログインできます。認証時の多要素認証は本 Hack ではスキップできます。
+
 ## Hack
 以下の Azure Machine Learning アセットとリソースを作成します。Azure Machine Learning スタジオ UI から作成しても、Azure Machine Learning SDK から作成してもかまいません。
 1. [Azure Machine Learning ワークスペース](https://ml.azure.com/)の作成。これは機械学習モデルの実験、学習、デプロイに使用する、クラウド上の基礎的なリソースです。
