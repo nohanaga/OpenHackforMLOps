@@ -64,4 +64,6 @@ Azure Machine Learning SDK を介して使用できる組み込みステップ�
     - [Azure Pipelinesを使用してデータの準備、機械学習モデルのトレーニング、デプロイ、監視を行う](https://docs.microsoft.com/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2Fmachine-learning%2Fcontext%2Fml-context&view=azure-devops&tabs=yaml)
     - [Azure Machine Learning で GitHub Actions を使用する](https://docs.microsoft.com/azure/machine-learning/how-to-github-actions-machine-learning?view=azure-devops)
 
+    **注意:** 無料アカウントで Azure DevOps を使用している場合パイプライン実行時に Requiest Form があり申請に 2,3 日かかります。**すでにパイプラインが実行可能な方のみ**選択してください。
+
  - データ加工フェーズをパイプライン化することも重要です。`00_LoadData.ipynb` の各セルを分離し、データ変換ステップを追加してパイプラインを構築してください。
