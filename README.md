@@ -43,6 +43,6 @@ MLOps は、データサイエンティストやアプリ開発者が ML/AI モ�
 ## Contributed by
  - [microsoft/WhatTheHack 032-MLOpsFromScratch](https://github.com/microsoft/WhatTheHack/tree/master/032-MLOpsFromScratch)
  - [microsoft/MLOpsPython](https://github.com/microsoft/MLOpsPython)
- - [notanaha/oh4ml-lite](https://github.com/notanaha/oh4ml-lite)
- - [tsmatsuz/oh4ml-lite-github-workflow](https://github.com/tsmatsuz/oh4ml-lite-github-workflow)
- - [tsmatsuz/oh4ml-lite-cli2](https://github.com/tsmatsuz/oh4ml-lite-cli2)
+ - [**notanaha/oh4ml-lite**](https://github.com/notanaha/oh4ml-lite)
+ - [**tsmatsuz/oh4ml-lite-github-workflow**](https://github.com/tsmatsuz/oh4ml-lite-github-workflow)
+ - [**tsmatsuz/oh4ml-lite-cli2**](https://github.com/tsmatsuz/oh4ml-lite-cli2)
