@@ -19,7 +19,7 @@ DevOps と同様、MLOps は非常に幅広いトピックであり、使用す�
 本チャレンジでは、[Azure Machine Learning スタジオ](https://docs.microsoft.com/azure/machine-learning/overview-what-is-machine-learning-studio)と呼ばれるクラウドプラットフォーム上で開発を行います。
 
 ![Azure Machine Learning Workspace](./images/001.png)
-Azure Machine Learning ワークスペースと各アセットとリソースについて図と[解説](https://docs.microsoft.com/azure/machine-learning/concept-azure-machine-learning-architecture)を見ながら関係を理解します。
+Azure Machine Learning ワークスペースと各アセットとリソースについて図と[解説](https://docs.microsoft.com/azure/machine-learning/v1/concept-azure-machine-learning-architecture)を見ながら関係を理解します。
 
 ## 前提条件
 - Azure のサブスクリプションを取得していること。お持ちでない場合は、[無料トライアル](https://azure.microsoft.com/free/)にお申し込みください。以下の Azure リソースを作成できることを確認します。
@@ -31,6 +31,7 @@ Azure Machine Learning ワークスペースと各アセットとリソースに
   - Storage Account
 
 - 提供された無償の Azure Pass がある場合は、そのまま [Azure Portal](https://portal.azure.com/) にログインできます。認証時の多要素認証は本 Hack ではスキップできます。
+- 本コンテンツは Azure ML SDK v1 向けに作成されています。
 
 ## Hack
 以下の Azure Machine Learning アセットとリソースを作成します。Azure Machine Learning スタジオ UI から作成しても、Azure Machine Learning SDK から作成してもかまいません。
@@ -38,7 +39,7 @@ Azure Machine Learning ワークスペースと各アセットとリソースに
 1. コンピューティング インスタンスの作成（汎用 Standard_D2s_v3 推奨）
 1. コンピューティング クラスターの作成（汎用 Standard_D2s_v3 推奨）
 
-<details><summary>ご自分のマシン上で作業する場合（オプション）</summary><div>
+<details><summary>ご自分のマシン上で作業する場合（オプション、今回は対象外）</summary><div>
 
 - Python のインストール、バージョンは最低でも 3.6.5 です。データサイエンス系の作業には Anaconda がより好ましい。
   - Anaconda - <https://docs.anaconda.com/anaconda/install/windows/>
@@ -62,10 +63,10 @@ Azure Machine Learning ワークスペースと各アセットとリソースに
 
 - Azure Machine Learning ワークスペースが Azure サブスクリプションに作成されている。
 - Azure Machine Learning ワークスペースにコンピューティング インスタンスおよびコンピューティング クラスターが作成されている。
-- Python がインストールされており、Python コードを実行するための IDE がある。（オプション）
+- Python がインストールされており、Python コードを実行するための IDE がある。（オプション、今回は対象外）
 
 ## 学習リソース
-- [Azure Machine Learning のしくみ:アーキテクチャと概念](https://docs.microsoft.com/azure/machine-learning/concept-azure-machine-learning-architecture)
+- [Azure Machine Learning のしくみ:アーキテクチャと概念](https://docs.microsoft.com/azure/machine-learning/v1/concept-azure-machine-learning-architecture)
 - [Azure Machine Learning ワークスペースとは](https://docs.microsoft.com/azure/machine-learning/concept-workspace)
 - [Azure Machine Learning の利用を開始するために必要なワークスペース リソースを作成する](https://docs.microsoft.com/azure/machine-learning/quickstart-create-resources)
 - [Azure Machine Learning コンピューティング インスタンスとは](https://docs.microsoft.com/azure/machine-learning/concept-compute-instance)

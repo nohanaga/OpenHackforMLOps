@@ -15,7 +15,7 @@ Web サービスとしてモデルをデプロイする場合、エンドポイ�
 
 ![モデルの推論ワークフロー](./images/003.png)
 
-図と[解説](https://docs.microsoft.com/azure/machine-learning/concept-azure-machine-learning-architecture#web-service-endpoint)を見ながらそれぞれのサービスとプロセスについて理解してから、以下のタスクを完了させます。
+図と[解説](https://docs.microsoft.com/azure/machine-learning/v1/concept-azure-machine-learning-architecture#web-service-endpoint)を見ながらそれぞれのサービスとプロセスについて理解してから、以下のタスクを完了させます。
 
 ## Hack
 1. 新しいノートブックを作成します。
@@ -23,7 +23,7 @@ Web サービスとしてモデルをデプロイする場合、エンドポイ�
 1. Azure クラウドで推論を実行するための**スコアリング スクリプト**を作成します。今回は事前に提供された `./scripts/score.py` の中身を参照し、[Challenge 1](./Challenge-01.md) で Notebook セルに記載されているコードと見比べながら差異を明らかにします。
 1. 事前に提供された conda 環境仕様 YAML ファイル `arima-env.yml` をロードして**環境**を作成します。
 1. **スコアリング スクリプト**と**環境**を**推論構成**にパッケージ化します。
-1. 推論 Web サービスが実行するために必要とするメモリとコアの量を指定した**デプロイ構成**を定義して `Azure Container Instances(ACI)` にデプロイします。
+1. 推論 Web サービスが実行するために必要とするメモリとコアの量を指定した**デプロイ構成**を定義して `Azure Container Instances(ACI)` にデプロイします。状況はスタジオ UI 上からも確認できます。
 1. 推論 Web サービスをテストします。
 
 
@@ -37,6 +37,6 @@ Web サービスとしてモデルをデプロイする場合、エンドポイ�
 ## 学習リソース
  - [機械学習モデルを Azure にデプロイする（Python）](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where?tabs=python)
  - [チュートリアル: サンプルの Jupyter Notebook を使用して画像分類モデルをトレーニングおよびデプロイする](https://docs.microsoft.com/azure/machine-learning/tutorial-train-deploy-notebook)
- - [Azure Machine Learning のしくみ:アーキテクチャと概念](https://docs.microsoft.com/azure/machine-learning/concept-azure-machine-learning-architecture)
+ - [Azure Machine Learning のしくみ:アーキテクチャと概念](https://docs.microsoft.com/azure/machine-learning/v1/concept-azure-machine-learning-architecture)
  - [AI と機械学習コンピューティングをオンプレミスとエッジにデプロイする](https://docs.microsoft.com/azure/architecture/hybrid/deploy-ai-ml-azure-stack-edge)
  - [モデル デプロイを使用したトラブルシューティング（テスト手法）](https://docs.microsoft.com/azure/machine-learning/how-to-troubleshoot-deployment-local#debug-locall)
